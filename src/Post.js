@@ -1,4 +1,4 @@
-export default function Post() {
+export default function Post({title, content, name}) {
   return (
     <div
       style={{
@@ -8,9 +8,10 @@ export default function Post() {
         margin: "25px",
       }}
     >
-      <h2>This is the post Title</h2>
+      <h2>{title}</h2>
+      <h2>{name}</h2>
       <hr />
-      <p>This is the post body</p>
+      <p>{content}</p>
     </div>
   );
 }

@@ -17,13 +17,9 @@ function App() {
         >
           {/* == POSTS CONTAINER == */}
           <div style={{ width: "70%" }}>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <Post title="20" name='أكاديمية ترميز' content='أكاديمية مخصصة لتعليم البرمجة بمختلف لغتها وتقنياتها'/>
+            <Post title='hello world' content='this is the hello world article'/>
+            <Post title='Post 3' content='this is the body of post 3'/>
           </div>
 
           <div style={{ width: "30%", marginTop: "25px" }}>
@@ -31,24 +27,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to refresh.
-        </p>
-
-        <h1>Tarmeez Academy</h1>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
