@@ -1,36 +1,34 @@
 import TagButton from "./TagButton";
 
 export default function SideMenu() {
+  const btns = [
+    {
+      id: 1,
+      title: 'آخر المقالات',
+      child: (
+        <span>😊😊😉</span>
+      )
+    },
+    {
+      id: 2,
+      title: 'الأكثر قراءة'
+    },
+    {
+      id: 3,
+      title: 'مميز'
+    }
+  ];
+
+  const btnsList = btns.map((btn) => {
+    return (
+      <TagButton key={btn.id} title={btn.title}>
+        {btn.child}
+      </TagButton>
+    )
+  })
   return (
     <div style={{ border: "solid teal 5px" }}>
-      <TagButton title="آخر المقالات">
-        <div>
-          <span>😀😀😀</span>
-        </div>
-      </TagButton>
-
-      <TagButton title="الأكثر قراءة">
-        <div>
-          <img
-            style={{ width: "100px" }}
-            src="https://www.thespruce.com/thmb/ClRANI4jTWhkGeNhvJtArRhlGSA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-difference-between-trees-and-shrubs-3269804-hero-a4000090f0714f59a8ec6201ad250d90.jpg"
-          />
-        </div>
-      </TagButton>
-      <TagButton title="مميز">
-        <h1>Click Me</h1>
-        <span>👍🏻</span>
-      </TagButton>
-      <TagButton title="مقالات الأسبوع" />
-      {/* <TagButton />
-      <TagButton />
-      <TagButton />
-      <TagButton />
-      <TagButton />
-      <TagButton />
-      <TagButton />
-      <TagButton />
-      <TagButton /> */}
+      {btnsList}
     </div>
   );
 }
