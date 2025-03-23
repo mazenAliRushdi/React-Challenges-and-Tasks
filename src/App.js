@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Scoreboard from "./Scoreboard";
 
-export default function App() {
+function App() {
   return (
-    <h1>
-      Hello World
-    </h1>
+    <Scoreboard />
   );
 }
+
+
+export default App;
