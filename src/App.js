@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Material from "./Material";
 
-export default function App() {
+
+function App() {
   return (
-    <h1>
-      Hello World
-    </h1>
+      <div className="App">
+        <Material />
+      </div>
   );
 }
+
+export default App;
